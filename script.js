@@ -1,8 +1,26 @@
+function getHumanChoice() {
+ 
+sign = window.prompt("Please enter your choice. Rock, Paper or scissor").toLowerCase();
+
+
+if ( sign === "rock" ) {
+return "rock";
+}
+else if (sign === "paper") { 
+    return "paper";
+}
+
+else if (sign === "scissor") {
+    return "scissor";
+}
+else {return "try again" }
+}
+console.log(getHumanChoice());
 
 
 
-
-
+let humanScore = 0;
+let computerScore = 0;
 
 
 
@@ -15,4 +33,6 @@ function computer() {
     
     }
     console.log(computer());
+
+
 
